@@ -411,6 +411,7 @@ sudo mv /home/$USER/.root/.zshrc /root/
 sudo mv /home/$USER/.root/.vimrc /root/
 sudo mv /home/$USER/.root/debianlogo.png /root/
 sudo cp -r /home/$USER/.src/.zsh /root/.src/
+sudo mv /home/$USER/.root/tlp.conf /etc/
 
 echo "Making scripts executable..."
 sudo chmod +x /home/$USER/.local/scripts/toggle_record.sh
@@ -547,6 +548,8 @@ echo "Enabling and starting nftables..."
 sudo systemctl enable nftables
 sudo systemctl start nftables
 sudo nft -f /etc/nftables.conf
+sudo systemctl enable tlp.service
+sudo systemctl start tlp.service
 
 sleep 2
 

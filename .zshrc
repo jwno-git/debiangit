@@ -44,7 +44,7 @@ clear
 if [[ -n "$DISPLAY" || "$XDG_SESSION_TYPE" == "wayland" ]]; then
   # In GUI terminal
   fastfetch --logo-type sixel \
-            --logo "$HOME/Pictures/Logos/debianlogo.png" \
+            --logo "$HOME/Pictures/Logos/debianlogop.png" \
             --logo-height 12 \
 	    --logo-width 22 \
             --logo-padding-left 2 \

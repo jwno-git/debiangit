@@ -97,7 +97,7 @@ bindsym $mod+q kill
 bindsym $mod+s exec grim -g "$(slurp)" - | swappy -f -
 bindsym $mod+Shift+s exec ~/.local/scripts/toggle_record.sh
 bindsym $mod+v exec footclient --app-id=editor --title="Editor" vim
-bindsym $mod+w exec firefox --new-window about:newtab
+bindsym $mod+w exec flatpak run io.gitlab.librewolf-community --new-window about:newtab
 bindsym $mod+z exec pgrep waybar && pkill waybar || waybar && nm-applet
 bindsym $mod+Tab focus next
 bindsym $mod+Shift+Tab focus prev

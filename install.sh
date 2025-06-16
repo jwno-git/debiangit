@@ -179,6 +179,7 @@ sudo apt install -y \
   dunst \
   fastfetch \
   fbset \
+  firefox-esr-l10n-en-ca \
   flatpak \
   fonts-font-awesome \
   fonts-terminus \
@@ -231,6 +232,7 @@ sudo apt install -y --no-install-recommends \
   libgl1-mesa-dev \
   libinput-dev \
   libjpeg-dev \
+  libmagic-dev \
   libpango1.0-dev \
   libpugixml-dev \
   libspa-0.2-bluetooth \
@@ -260,7 +262,6 @@ echo "Installing Flatpak applications..."
 flatpak install -y --user flathub \
 	org.kde.kdenlive \
 	org.libreoffice.LibreOffice \
-        io.gitlab.librewolf-community \
 	org.gnome.eog \
 	com.bitwarden.desktop \
 	org.gnome.Calculator
@@ -287,9 +288,6 @@ flatpak override --user org.gnome.eog \
   	--filesystem=home
 
 flatpak override --user org.libreoffice.Libreoffice \
-	--filesystem=home
-
- flatpak override --user io.gitlab.librewolf-community \
 	--filesystem=home
 
 sleep 2

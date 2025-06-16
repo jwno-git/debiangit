@@ -7,8 +7,8 @@ export XDG_DATA_DIRS="$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/
 export EDITOR="vim"
 export VISUAL="vim"
 export GTK_THEME=Tokyonight-Dark
-export XDG_CURRENT_DESKTOP=Hyprland
-export XDG_SESSION_DESKTOP=Hyprland
+export XDG_CURRENT_DESKTOP=sway
+export XDG_SESSION_DESKTOP=sway
 
 # Aliases
 alias ll='ls -al'

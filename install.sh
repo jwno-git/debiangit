@@ -1,9 +1,5 @@
 set -e
 
-echo "=================================================="
-echo "  DEBIAN SWAY INSTALLATION SCRIPT"
-echo "=================================================="
-
 read -p "Press Enter to continue..."
 
 # #######################################################################################
@@ -212,7 +208,6 @@ sudo apt install -y \
   tar \
   tlp \
   tlp-rdw \
-  thermald \
   vim \
   waybar \
   wireplumber \

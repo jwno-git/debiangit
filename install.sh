@@ -14,15 +14,16 @@ sudo apt update && sudo apt install -y \
   gpg
 
 echo "Moving dotfiles and configs..."
-mv /home/$USER/debgit/.config /home/$USER/
-mv /home/$USER/debgit/.icons /home/$USER/
-mv /home/$USER/debgit/.themes /home/$USER/
-mv /home/$USER/debgit/.local /home/$USER/
-mv /home/$USER/debgit/Documents /home/$USER/
-mv /home/$USER/debgit/.root /home/$USER/
-mv /home/$USER/debgit/Pictures /home/$USER/
-mv /home/$USER/debgit/.vimrc /home/$USER/
-mv /home/$USER/debgit/.zshrc /home/$USER/
+mv /home/$USER/debiangit/.config /home/$USER/
+mv /home/$USER/debiangit/.icons /home/$USER/
+mv /home/$USER/debiangit/.themes /home/$USER/
+mv /home/$USER/debiangit/.local /home/$USER/
+mv /home/$USER/debiangit/Documents /home/$USER/
+mv /home/$USER/debiangit/.root /home/$USER/
+mv /home/$USER/debiangit/Pictures /home/$USER/
+mv /home/$USER/debiangit/.vimrc /home/$USER/
+mv /home/$USER/debiangit/.zshrc /home/$USER/
+mv /home/$USER/debiangit/bookmarks.html /home/$USER/
 
 echo "Adding Brave Browser repository..."
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
